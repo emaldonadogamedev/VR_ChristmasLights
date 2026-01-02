@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: abe1d6283a9444bc586126819ea3a3d3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - instantiatorEndpointPrefab: {fileID: 8022585604863836925, guid: 402d184255be14e4094b93c53c9e0567, type: 3}
+  - startPoint: {instanceID: 0}
+  - endPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
