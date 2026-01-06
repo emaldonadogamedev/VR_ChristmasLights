@@ -1,50 +1,61 @@
-using System;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Splines;
 
 [DisallowMultipleComponent]
-[RequireComponent(typeof(ChristmasLightCollection))]
+[RequireComponent(
+    typeof(ChristmasLightCollection),
+    typeof(SplineContainer), 
+    typeof(SplineInstantiate))]
+[RequireComponent(typeof(LineRenderer))]
 public abstract class BaseChristmasLightInstantiator : MonoBehaviour
 {
     [SerializeField]
     private ChristmasLightCollection.ChristmasLightType christmasLightType = 
         ChristmasLightCollection.ChristmasLightType.Emissive;
     
-    protected ChristmasLightCollection christmasLightCollection;
-    
-    public GameObject LightContainerObject
-    {
-        get
-        {
-            if (lightContainerObject == null)
-            {
-                var christmasLightCollection = GetComponent<ChristmasLightCollection>();
-                lightContainerObject = 
-                    ChristmasLightContainerObjectCreator.CreateLightContainerObject(christmasLightCollection);
-            }
-
-            return lightContainerObject;   
-        }
-    }
-
-    private GameObject lightContainerObject = null;
+    protected ChristmasLightCollection _christmasLightCollection;
+    protected SplineContainer _splineContainer;
+    protected SplineInstantiate _splineInstantiate;
+    protected LineRenderer _lineRenderer;
     
     public void AddNewLight(Vector3 scatterPosition)
     {
-        GameObject newChristmasLight = ChristmasLightCreator.CreateNewChristmasLight(
-            christmasLightCollection.LightPrefab, 
-            scatterPosition,
-            LightContainerObject);
-            
-        christmasLightCollection.lightsScattered.Add(newChristmasLight);
+        foreach (Transform child in _splineInstantiate.transform.GetChild(0).transform)
+        {
+            print("Instantiated Object: " + child.name);
+        }
     }
 
     public void RemoveAllLights()
     {
-        ChristmasLightRemover.ClearLightsFromCollection(christmasLightCollection);
+        _splineInstantiate.Clear();
     }
 
-    protected void OnValidate()
+    protected void OnEnable()
     {
-        christmasLightCollection = GetComponent<ChristmasLightCollection>();
+        Debug.Log("BaseChristmasLightInstantiator.OnEnable");
+        
+        _christmasLightCollection = GetComponent<ChristmasLightCollection>();
+        
+        _splineContainer = GetComponent<SplineContainer>();
+        if (_splineContainer.Spline.Knots.Count() < 2)
+        {
+            while (_splineContainer.Spline.Knots.Count() < 2)
+            {
+                _splineContainer.Spline.Add(Vector3.zero, TangentMode.Linear);
+            }
+        }
+        
+        _splineInstantiate = GetComponent<SplineInstantiate>();
+        _splineInstantiate.InstantiateMethod = SplineInstantiate.Method.InstanceCount;
+        
+        _lineRenderer = GetComponent<LineRenderer>();
+        
+        #if UNITY_EDITOR
+        _splineContainer.hideFlags = HideFlags.NotEditable;
+        _splineInstantiate.hideFlags = HideFlags.NotEditable;
+        _lineRenderer.hideFlags = HideFlags.NotEditable;
+        #endif
     }
 }

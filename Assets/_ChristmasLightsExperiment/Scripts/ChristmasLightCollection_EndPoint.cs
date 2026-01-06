@@ -15,8 +15,8 @@ public class ChristmasLightCollection_EndPoint : MonoBehaviour
         if (lightInstantiatior == null)
             return;
         
-        Gizmos.DrawWireCube(lightInstantiatior.StartPoint.position, k_EndPointGizmoSize);
-        Gizmos.DrawWireCube(lightInstantiatior.EndPoint.position, k_EndPointGizmoSize);
+        Gizmos.DrawWireCube(lightInstantiatior.StartPoint, k_EndPointGizmoSize);
+        Gizmos.DrawWireCube(lightInstantiatior.EndPoint, k_EndPointGizmoSize);
     }
 }
 #endif

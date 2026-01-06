@@ -24,12 +24,4 @@ public class ChristmasLightCollection : MonoBehaviour
 
     public int NumberOfLights => numberOfLights;
     public GameObject LightPrefab => lightPrefab;
-    
-    [HideInInspector]
-    public List<GameObject> lightsScattered;
-
-    private void Awake()
-    {
-        lightsScattered = new List<GameObject>();
-    }
 }

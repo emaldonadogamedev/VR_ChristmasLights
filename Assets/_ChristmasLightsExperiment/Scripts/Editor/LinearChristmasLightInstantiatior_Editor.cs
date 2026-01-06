@@ -18,13 +18,7 @@ public class LinearChristmasLightInstantiatior_Editor : BaseChristmasLightInstan
         
         if (GUILayout.Button("Reset Endpoints"))
         {
-            lightInstantiatior.StartPoint.SetPositionAndRotation(
-                christmasLightCollection.transform.position + Vector3.left,
-                Quaternion.identity);
             
-            lightInstantiatior.EndPoint.SetPositionAndRotation(
-                christmasLightCollection.transform.position +  Vector3.right,
-                Quaternion.identity);
         }
         if (GUILayout.Button("Scatter Lights"))
         {
@@ -47,8 +41,8 @@ public class LinearChristmasLightInstantiatior_Editor : BaseChristmasLightInstan
             christmasLightCollection.GetComponent<LinearChristmasLightInstantiatior>();
         
         int numberOfLights = christmasLightCollection.NumberOfLights;
-        var startPoint = lightInstantiatior.StartPoint.position;
-        var endPoint = lightInstantiatior.EndPoint.position;
+        var startPoint = lightInstantiatior.StartPoint;
+        var endPoint = lightInstantiatior.EndPoint;
         
         if (numberOfLights <= 1)
         {

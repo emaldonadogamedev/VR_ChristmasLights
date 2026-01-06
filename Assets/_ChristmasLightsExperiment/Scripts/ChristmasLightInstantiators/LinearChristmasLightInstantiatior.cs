@@ -1,5 +1,4 @@
-using System;
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LinearChristmasLightInstantiatior : BaseChristmasLightInstantiator
@@ -9,8 +8,7 @@ public class LinearChristmasLightInstantiatior : BaseChristmasLightInstantiator
     private GameObject instantiatorEndpointPrefab;
     
 #if UNITY_EDITOR
-    
-    Vector3[] gizmosPositions = 
+    private Vector3[] gizmosPositions = 
     {
         new(),
         new(),
@@ -19,33 +17,34 @@ public class LinearChristmasLightInstantiatior : BaseChristmasLightInstantiator
     };
 #endif
     
-    public Transform StartPoint
-    {
-        get 
-        { 
-            if (startPointObject == null)
-            {
-                startPointObject = CreateEndPoint("StartPoint");
-            }
-                
-            return startPointObject.transform; 
-        }
-    }
-
-    public Transform EndPoint
+    public Vector3 StartPoint
     {
         get
         {
-            if (endPointObject == null)
-            {
-                endPointObject = CreateEndPoint("EndPoint");
-            }
-            return endPointObject.transform;
+            var knot0 = _splineContainer.Spline.Knots.ElementAt(0); 
+            var worldPos = _splineContainer.transform.TransformPoint(knot0.Position);
+            
+            return worldPos;
         }
     }
 
-    private GameObject startPointObject;
-    private GameObject endPointObject;
+    public Vector3 EndPoint
+    {
+        get
+        {
+            var knot1 = _splineContainer.Spline.Knots.ElementAt(1); 
+            var worldPos = _splineContainer.transform.TransformPoint(knot1.Position);
+            
+            return worldPos;
+        }
+    }
+    
+    protected new void OnEnable()
+    {
+        Debug.Log("LinearChristmasLightInstantiatior.OnEnable");
+        
+        base.OnEnable();
+    }
     
     private GameObject CreateEndPoint(string endPointName)
     {
@@ -60,10 +59,10 @@ public class LinearChristmasLightInstantiatior : BaseChristmasLightInstantiator
     {
         var christmasLightCollection = GetComponent<ChristmasLightCollection>();
         
-        gizmosPositions[0] = StartPoint.position;
-        gizmosPositions[1] = StartPoint.position + Vector3.up * .1f;
-        gizmosPositions[2] = EndPoint.position + Vector3.up * .1f;
-        gizmosPositions[3] = EndPoint.position;
+        gizmosPositions[0] = StartPoint;
+        gizmosPositions[1] = StartPoint + Vector3.up * .1f;
+        gizmosPositions[2] = EndPoint + Vector3.up * .1f;
+        gizmosPositions[3] = EndPoint;
         
         
         Gizmos.DrawLineStrip(gizmosPositions, false);
