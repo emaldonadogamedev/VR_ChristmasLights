@@ -35,7 +35,6 @@ public class ChristmasLight : MonoBehaviour
             color = Color.yellow;
         
         SetColor(color);
-
     }
     
     public void SwitchLightType(LightType newLightType)
@@ -49,7 +48,7 @@ public class ChristmasLight : MonoBehaviour
     public void SetColor(Color color)
     {
         if(emissiveLight.activeSelf)
-            emissiveLight.GetComponent<Renderer>().material.SetColor("_EmissionColor", color * 5f);
+            emissiveLight.GetComponent<Renderer>().material.SetColor("_EmissionColor", color * 10f);
         
         if(pointLight.activeSelf)
             pointLight.GetComponent<Light>().color = color;

@@ -2503,7 +2503,7 @@ PrefabInstance:
     - target: {fileID: 628798968040718714, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f95c205049f12cc4cb5bd57dbded286c, type: 2}
+      objectReference: {fileID: 2100000, guid: 54f7c59213ac02b4d9f00104348dbac3, type: 2}
     - target: {fileID: 4803614339566677342, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4635,111 +4635,6 @@ MonoBehaviour:
       m_Calls: []
   m_SkinnedMeshRenderer: {fileID: 807051349}
   m_BlendShapeIndex: 0
---- !u!1 &609486761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-  m_PrefabInstance: {fileID: 1570873471}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &609486765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-  m_PrefabInstance: {fileID: 1570873471}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609486761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineContainer
---- !u!114 &609486767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609486761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222dc08d484f16869bdd89edd9d368fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Splines::UnityEngine.Splines.SplineExtrude
-  m_Container: {fileID: 609486765}
-  m_TargetMesh: {fileID: 0}
-  m_RebuildOnSplineChange: 1
-  m_RebuildFrequency: 30
-  m_UpdateColliders: 1
-  m_Sides: 8
-  m_SegmentsPerUnit: 4
-  m_Capped: 0
-  m_Radius: 0.002
-  m_Range: {x: 0, y: 1}
-  m_FlipNormals: 0
-  m_Shape:
-    rid: 8553901525216264368
-  references:
-    version: 2
-    RefIds:
-    - rid: 8553901525216264368
-      type: {class: Circle, ns: UnityEngine.Splines.ExtrusionShapes, asm: Unity.Splines}
-      data:
-        m_Sides: 8
---- !u!23 &609486768
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609486761}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &609486769
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609486761}
-  m_Mesh: {fileID: 0}
 --- !u!1 &610590590
 GameObject:
   m_ObjectHideFlags: 0
@@ -6915,6 +6810,67 @@ Transform:
   - {fileID: 1508036975}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &819563767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_RootOrder
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473364, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 305a3bd1e0115c34ca3c0d0d4089a556, type: 3}
 --- !u!1 &841128059
 GameObject:
   m_ObjectHideFlags: 0
@@ -12305,312 +12261,6 @@ PrefabInstance:
       addedObject: {fileID: 1416212407}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
---- !u!1001 &1570873471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Spacing.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Spacing.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_AutoRefresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_ItemsToInstantiate.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_ItemsToInstantiate.Array.data[0].Prefab
-      value: 
-      objectReference: {fileID: 1611611959176417804, guid: 715a4a6398c3c41c09989a166912e28f, type: 3}
-    - target: {fileID: 1732697572665487457, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_ItemsToInstantiate.Array.data[1].Prefab
-      value: 
-      objectReference: {fileID: 1611611959176417804, guid: 715a4a6398c3c41c09989a166912e28f, type: 3}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_Knots.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_MetaData.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_MetaData.Array.data[0].Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_MetaData.Array.data[0].Tension
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_Knots.Array.data[0].TangentIn.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_Knots.Array.data[0].TangentOut.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2936662512152364843, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Splines.Array.data[0].m_Knots.Array.data[0].Rotation.value.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104555078762757749, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_Name
-      value: RuntimeChirstmasLightCollection
-      objectReference: {fileID: 0}
-    - target: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_Name
-      value: Add Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_Flags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_Interactions
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_Name
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_Name
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_ExpectedControlType
-      value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_ExpectedControlType
-      value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_ExpectedControlType
-      value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Id
-      value: 79eb8800-30d0-4fc4-be8f-4b2944b55978
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[1].m_Id
-      value: 79eb8800-30d0-4fc4-be8f-4b2944b55978
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[2].m_Id
-      value: d3093dae-8251-44dc-8793-e5017e64bfdb
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <XRController>{RightHand}/gripButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[1].m_Name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <XRController>{RightHand}/gripButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[2].m_Name
-      value: positive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Flags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[1].m_Flags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[2].m_Flags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Add Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[1].m_Action
-      value: Add Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[2].m_Action
-      value: Add Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _addKnotAction.m_SingletonActionBindings.Array.data[0].m_Interactions
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Id
-      value: aa7e1cce-1f05-47a8-96f0-86202fa7ac5a
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[1].m_Id
-      value: aa7e1cce-1f05-47a8-96f0-86202fa7ac5a
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[2].m_Id
-      value: aa7e1cce-1f05-47a8-96f0-86202fa7ac5a
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Id
-      value: cbf53931-6997-40e5-bd94-440e09356cf4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <XRController>{RightHand}/{PrimaryButton}
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <XRController>{RightHand}/{PrimaryButton}
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[2].m_Path
-      value: <XRController>{RightHand}/{PrimaryButton}
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Path
-      value: '*/{PrimaryButton}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[1].m_Action
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[2].m_Action
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Toggle Is Adding Knot
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Interactions
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8878986795665683212, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      propertyPath: _toggleIsAddingKnotAction.m_SingletonActionBindings.Array.data[0].m_Interactions
-      value: Press
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 609486769}
-    - targetCorrespondingSourceObject: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 609486768}
-    - targetCorrespondingSourceObject: {fileID: 7046154081970147218, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 609486767}
-  m_SourcePrefab: {fileID: 100100000, guid: 01eb7f4b1b72b48eaade180d864c4b59, type: 3}
 --- !u!4 &1573382093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7798696490737561623, guid: 2c1a76173c7e0144fbab968bd1968de1, type: 3}
@@ -13620,7 +13270,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.27
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -18703,6 +18353,6 @@ SceneRoots:
   - {fileID: 1703568386}
   - {fileID: 610590593}
   - {fileID: 1825945902}
-  - {fileID: 1570873471}
   - {fileID: 380594082}
   - {fileID: 7295945193020966297}
+  - {fileID: 819563767}
